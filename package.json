@@ -1,0 +1,9 @@
+{
+  "name": "template_ts",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/KaYaF/template_ts.git",
+  "author": "KaYaF <d.guitar.c@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
