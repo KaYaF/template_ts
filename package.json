@@ -10,7 +10,6 @@
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
     "@types/node": "^16.11.6",
-    "gts": "^3.1.0",
     "husky": "^7.0.4",
     "lint-staged": "^13.0.3",
     "ts-loader": "^9.2.6",
@@ -19,21 +18,13 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "gts-lint": "gts lint ./src",
-    "gts-clean": "gts clean ./src",
-    "gts-fix": "gts fix ./src",
     "build": "npm run build-esm && npm run build-umd-dev && npm run build-umd-prod",
     "build-umd-dev": "npx webpack --config ./config/webpack/webpack.config.development.js",
     "build-umd-prod": "npx webpack --config ./config/webpack/webpack.config.production.js",
     "build-esm": "npx webpack --config ./config/webpack/webpack.config.common_module.js",
-    "lint": "gts lint",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix"
+    "compile": "tsc"
   },
-  "lint-staged": {
-    "src/**/*.{ts,js}": "yarn gts-fix"
-  },
+  "lint-staged": {},
   "dependencies": {
     "webpack": "^5.74.0",
     "webpack-merge": "^5.8.0"
