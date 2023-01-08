@@ -1,12 +1,8 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "target": "es2017",
     "module": "esnext",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "declaration": true,
     "declarationDir": "./dist/esm",
     "sourceMap": true,
@@ -25,11 +21,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "exclude": [
-    "./dist",
-    "./node_modules",
-  ],
-  "include": [
-    "./src/**/*.ts",
-  ]
+  "exclude": ["./dist", "./node_modules"],
+  "include": ["./src/**/*.ts"]
 }

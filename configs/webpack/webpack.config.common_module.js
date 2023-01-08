@@ -1,7 +1,7 @@
-const merge = require('webpack-merge').merge;
-const baseConfig = require('./webpack.config.base.js');
-const path = require('path');
-const webpack = require('webpack');
+import path from 'path';
+import webpack from 'webpack';
+import {merge} from 'webpack-merge';
+import baseConfig from './webpack.config.base.js';
 
 const config = merge(baseConfig, {
   target: 'node',
