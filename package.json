@@ -39,14 +39,14 @@
     "commitlint": "commitlint -g ./configs/commitlint.config.ts",
     "format": "yarn prettier --write --list-different .",
     "lint:js": "yarn eslint --ext \".js,.ts\"",
-    "lint:style": "yarn stylelint \"**/*.{css,scss,sass,html}\"",
+    "lint:style": "yarn stylelint \"**/*.{css,scss,sass}\"",
     "lint:prettier": "yarn prettier --check .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
     "lint:fix": "yarn lint:js --fix && yarn lint:style --fix && yarn format"
   },
   "lint-staged": {
     "*.{js,ts}": "yarn lint:js --fix",
-    "*.{css,scss,sass,html}": "yarn lint:style --fix",
+    "*.{css,scss,sass}": "yarn lint:style --fix",
     "*": "yarn format"
   },
   "dependencies": {
