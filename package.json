@@ -50,7 +50,7 @@
     "*": "yarn format"
   },
   "dependencies": {
-    "webpack": "^5.74.0",
+    "webpack": "^5.76.0",
     "webpack-merge": "^5.8.0"
   }
 }
